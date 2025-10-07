@@ -5,22 +5,14 @@
 
 version: 2
 updates:
+  # Python (pip / pipenv / pip-tools)
   - package-ecosystem: "pip"
-    directory: "/"
+    directory: "/"            
     schedule:
       interval: "weekly"
 
-  - package-ecosystem: "pip-compile"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-
-  - package-ecosystem: "pipenv"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-
-  - package-ecosystem: "pnpm"
-    directory: "/"
+  # Node (npm / yarn / pnpm)
+  - package-ecosystem: "npm"
+    directory: "/"            
     schedule:
       interval: "weekly"
